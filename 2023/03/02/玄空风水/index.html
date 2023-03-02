@@ -1,0 +1,1126 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="玄空风水, Java">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>玄空风水 | 🕊我知道你很急但你先别急</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">🕊我知道你很急但你先别急</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-institution" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-wifi" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-battery" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">🕊我知道你很急但你先别急</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-institution"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-wifi"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-battery"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">玄空风水</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/fengS/">
+                                <span class="chip bg-color">fengS</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-03-02
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.1k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="玄空风水"><a href="#玄空风水" class="headerlink" title="玄空风水"></a>玄空风水</h1><hr>
+<p>@<a href="%E7%8E%84%E7%A9%BA%E9%A3%8E%E6%B0%B4">TOC</a></p>
+<hr>
+<h1 id="一、风水概念"><a href="#一、风水概念" class="headerlink" title="一、风水概念"></a>一、风水概念</h1><p>高一寸为山、第一寸为水。<br>砂为山、路为水、山水未必是山峰河流。</p>
+<h2 id="1-天干地支"><a href="#1-天干地支" class="headerlink" title="1.天干地支"></a>1.天干地支</h2><p>十天干：甲乙丙丁戊己庚辛壬癸<br>五行：甲乙木、丙丁火、戊己土、庚辛金、壬癸水<br>十二地支：子丑寅卯辰四五位申酉戌亥<br>地支五行：水土木木土火火土金金土水</p>
+<h2 id="2-河图洛书"><a href="#2-河图洛书" class="headerlink" title="2.河图洛书"></a>2.河图洛书</h2><p>河图为体、洛书为用<br><code>河图：</code>——————🎇——————<code>：洛书(九宫)</code><br>北方1  6壬癸水 共宗 🎇 4巽 — 9离 — 2坤<br>南方2  7丙丁火 同道 🎇 3震 — 5五 — 7兑<br>东方3  8甲乙木 为朋 🎇 8艮 — 1坎 — 6乾<br>西方4  9庚辛金 为友 🎇 带九履一、左三右七<br>中方5 10戊己土 同途🎇 二四为肩、六八为足</p>
+<h2 id="3-三元九运"><a href="#3-三元九运" class="headerlink" title="3.三元九运"></a>3.三元九运</h2><p><img src="https://img-blog.csdnimg.cn/c74e01190c854eb18d2293a63957cce4.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="4-先天河图数及运用（仅参考）"><a href="#4-先天河图数及运用（仅参考）" class="headerlink" title="4.先天河图数及运用（仅参考）"></a>4.先天河图数及运用（仅参考）</h2><p><strong><code>八字五行→楼层五行→楼房方位</code></strong></p>
+<p>方位主要为后天八卦、方向卦之属性都是与楼层属性相生为好、相克为坏<br><strong>北方一六（水）：</strong><br>朝向为震、巽、坎位则为生旺之气。 有利于：学问、功名、读书好。<br>朝向为离、艮、坤位则为克杀之气。 不利于：不利男人、淫荡、漂流无依、流产、溺水。<br><strong>南方二七（火）</strong><br>朝向为艮、坤、离位则为生旺之气。 有利于：发财、利于女人、生女、读书好。<br>朝向为坎、乾、兑位则为克杀之气。 不利于：主官非、吐血、暴病、流产。<br><strong>东方三八（木）</strong><br>朝向为离、震、巽位则为生旺之气。 有利于：主男丁、读书好、旺人丁<br>朝向为坤、艮、乾、兑位则为克杀之气。 不利于：主少年夭折、自缢、出盗贼、不肖子孙<br><strong>西方四九（金）</strong><br>朝向为坎、乾、兑位则为生旺之气。 有利于：主义气、富有、发武贵<br>朝向为离、震、巽位则为克杀之气。 不利于：主不义、外伤、官非、车祸、淫荡<br><strong>中宫五十（土）</strong><br>朝向为坤、艮、乾、兑位则为生旺之气。 有利于：主富有、多房产、多人丁<br>朝向为坎、震、巽位则为克杀之气。 不利于：主传染病、炎症、堵塞不同之病、主寡</p>
+<h2 id="5-洛书九星（地盘）"><a href="#5-洛书九星（地盘）" class="headerlink" title="5.洛书九星（地盘）"></a>5.洛书九星（地盘）</h2><p>贪狼：一、坎卦、坎宫、正北方、属水、白色一白水星：属阳 <code>文昌星</code><br>天象：月、雨水、虹、云、霜露雪、冬天<br>地象：江湖溪涧、海洋、泉井湖泊、渠沟污厕<br>人象：中男、酒鬼、江湖人物、僧人道士、盗匪淫贼、淫荡、娇柔、耳、血、肾、发、胎<br>物象：白色、<code>黑色、蓝色</code>、水阁江楼、妓院、浴房、猪、鱼、水族、阴湿虫鼠、水草、酒肉、汤、酸醋</p>
+<p>巨门：二、坤卦、坤宫、西南方、属土、黑色二黑土星：属阴 <code>病符星</code><br>天象：阴云、雾气、冰霜、夏秋之间<br>地象：田野、乡村、平地、阴巷、林阴、暗角<br>人象：母、后母、农夫、乡人、老夫人、尼姑、教官、教师、寡妇、小人、静柔、腹、脾、胃、肉<br>物象：广平而方、<code>黄黑色</code>、村庄、田舍、牛、母牛、子牛、羊、猴、母马、五谷、木柄、平物、瓦器、甜具</p>
+<p>禄存：三、震卦、震宫、正东方、属木、碧色三碧木星：属阳 <code>禄存星</code><br>天象：雷、春季<br>地象：高直之山、清秀碧绿、闹市<br>人象：长子、秀士、商旅、盗贼、性情劲直、足、声音、肝、头发<br>物象：高直木头、青碧色、高楼大厦、阁楼、蛇、鹭、乔木、森林、竹林、磨坊、竹木乐器、灯柱、高塔</p>
+<p>文昌：四、巽卦、巽宫、东南方、属木、绿色四绿木星：属阴 <code>文曲星</code><br>天象：风、春夏之间<br>地象：草木茂秀之所、花果菜园、林苑<br>人象：长女、寡妇、秀士、山林仙道、工女、护士、性格缓和、文人、典狱、妾、富人、白眼、口气、眼、桃花<br>物象：楼台、山林之居、鸡、蛇、鹅、灌木、麻、茶、长物、羽毛、</p>
+<p>廉贞：五、天心、中宫、正北方、属土、黄色五黄土星 <code>廉贞星</code><br>纯黄、寡、不利男丁、炎症、肾病、性病、癌、肿、阻塞不通之证、意外</p>
+<p>武曲：六、乾卦、乾宫、西北方、属金、白色六白金星：属阳 <code>武曲星</code>靠技术吃饭<br>天象：纯阳、天、冰雹、雪、秋冬之间<br>地象：京都、大郡、高亢之所、用武之地<br>人象：父亲、老翁、君主、官贵、首领、大富商、将帅、性格刚健、动而不息、头、肺、骨、颈<br>物象：高堂、大厅、楼台、马、狮子、大象、犬、猪、木瓜、首饰、珠宝、玉器、水晶、钱币、刚硬之物</p>
+<p>破军：七、兑卦、兑宫、正西方、属金、赤色七赤金星：属阴 <code>破军星</code>语言能力强<br>天象：雨水、流行、雾露、秋<br>地象：泽地、废井、山坡<br>人象：少女、主持人、奴婢、歌姬舞女、怜人、媒人、性格决绝、多口舌、膀胱、口、舌、喉、生殖器、肺<br>物象：缺口、残缺之意、羊、鱼、鸟、虎豹、糖果、糕饼、刀、斧、酒壶、乐器、鼓</p>
+<p>左辅：八、艮卦、艮宫、东北方、属土、白色八白土星：属阳 <code>左辅星</code><br>天象：云、雾、星、冬春之间<br>地象：山城、山径、丘陵、坟墓<br>人象：少男、君子、书童、性格安静、多疑、手、指、鼻、背、肠<br>物象：矮丘、白墙、寺庙、土庐、坚硬多节之木、土豆、兵甲、布袋</p>
+<p>右弼：九、离卦、离宫、正南方、属火、紫色九紫火星：属阴 <code>右弼星</code> 明亮光彩漂亮<br>天象：日、天火、火光、电、夏<br>地象：炉灶、灯珠、焚火<br>人象：瞎子、中女、文人、性情急躁、重虚荣、眼镜、心脏<br>物象：尖峰、龟、鳖、蚌、虫、骨头、木头、灯</p>
+<h2 id="6-九星旺衰特征"><a href="#6-九星旺衰特征" class="headerlink" title="6.九星旺衰特征"></a>6.九星旺衰特征</h2><p>贪狼：<br>旺：聪明之子、读书好<br>衰：瞎眼、飘荡无依、溺水身亡、不利男丁、贼盗<br>巨门：<br>旺：田产致富、旺人丁、女性当权、寡妇兴家、利富贵不利学业<br>衰：腹部疾病、流产夭折、代代出寡<br>禄存：<br>旺：长子当家、白手起家、富贵双全<br>衰：不利长男、是非官非、盗贼、神经疾病<br>文昌：<br>旺：长女读书好、俊男美女、琴棋书画<br>衰：不利长女、酒色贪淫、乞丐、神经错乱<br>廉贞：<br>旺：权贵极高极富之人、掌握生杀之权<br>衰：丧丁、出寡妇、暴毙、不利男丁、动则生灾<br>武曲：<br>旺：官贵、发富<br>衰：官非不断、肺部疾病、破财、外伤<br>破军：<br>旺：武贵<br>衰：残疾、淫荡、火灾、官非、盗贼<br>左辅：<br>旺：忠臣孝子、文人秀人、富贵双全<br>衰：小儿残疾、主传染病<br>右弼：<br>旺：富贵、突然暴富、易兴易败、主读书<br>衰：火灾、吐血、官非、小产</p>
+<h2 id="7-二十四山"><a href="#7-二十四山" class="headerlink" title="7.二十四山"></a>7.二十四山</h2><p>东方甲卯乙属木，西方庚西辛属金:<br>南方丙午丁属火，北方王子癸属水:<br>东南辰巽已属木，西北戊乾亥属金:<br>西南未坤申属土，东北丑艮寅属土。</p>
+<p>阳：乾巽艮坤壬甲丙庚寅申已亥<br>阴：子午卯酉丁辛乙癸辰戌丑未</p>
+<h2 id="8-飞布九星的天盘（中宫立极）"><a href="#8-飞布九星的天盘（中宫立极）" class="headerlink" title="8.飞布九星的天盘（中宫立极）"></a>8.飞布九星的天盘（中宫立极）</h2><p><strong><code>第一步：按照房屋建造时运布置天盘</code></strong><br><strong>后天八卦：</strong><br>4巽 — 9离 — 2坤<br>3震 — 5中 — 7兑<br>8艮 — 1坎 — 6乾<br>根据房屋建造年代的元运飞入中宫、飞布星盘<br>按照1.2.3.4.5.6.7.8.9.1.2.3…..顺序来重新布盘<br><strong>例</strong> ：比方是三元九运的八运2004.2-2024.2期间建造的房屋、将艮放入中宫、按顺序来重置星盘、<br>7兑 — 3震 — 5中<br>6乾 — 8艮 — 1坎<br>2坤 — 4巽 — 9离</p>
+<p>天元龙、地元龙、人元龙、<br>排序方式：从右到左 、每一卦三山从左到天分别为：地、天、人。<br>壬为阳，则同卦子、癸为阴。此时再往左边艮卦丑山为阴、艮卦寅、艮为阳、震卦甲山为阳。<br>以此类推。。。</p>
+<hr>
+<p><strong><code>第二步：布置山、向盘</code></strong><br><strong>测量房屋座向</strong><br><strong>例</strong> ：子山午向:<br>此时按照第一步布置好的星盘天盘。将此时的子山<code>四</code>和午向<code>三</code>放入中宫再次布置<br>7兑 — 3震 — 5中<br>6乾 — 8艮(4山，3向) — 1坎<br>2坤 — 4巽 — 9离<br><strong><code>注意！！</code></strong><br>此时先看子山午为<code>四</code>也就是原后天八卦的<code>坎一宫</code>，<code>子为坎一宫中的天元龙</code> <strong>先确定原后天八卦的中是什么元龙</strong><br>再看原后天八卦的<code>巽四宫</code>的天元龙：为<code>巽</code>，巽是原本后天八卦中<code>巽四宫的天元龙、为阳</code> <strong>之后直接去找第一部之后重新排盘的巽四宫什么元龙是什么</strong><br>**<code>阳顺阴逆</code>**所以根据原先巽四宫中天元龙为阳、所以我们在重新布置山向盘时用顺序123456789方式排盘<br>7兑(3山，4向) — 3震(8山，8向) — 5中(1山，6向)<br>6乾(2山，5向) — 8艮(4山，3向) — 1坎(6山，1向)<br>2坤(7山，9向) — 4巽(9山，7向) — 9离(5山，2向)<br>此时当运之星<code>艮8</code>同时汇聚与原后天八卦<code>离火宫</code> 则称之为： <strong><code>双星会向</code></strong></p>
+<hr>
+<p><img src="https://img-blog.csdnimg.cn/13e971ab9e644a338391aa10eba00a4e.png#pic_center" alt="在这里插入图片描述"><br>如图 座山的当运之星在向上、向山的当运之星在山上。称之为**<code>上山下水</code>**<br><img src="https://img-blog.csdnimg.cn/7dbc100421e74061bc26bae5dc810043.png#pic_center" alt="在这里插入图片描述"><br>如图：双星会坐</p>
+<h2 id="五入中宫"><a href="#五入中宫" class="headerlink" title="五入中宫"></a>五入中宫</h2><p>五入中宫如果在大运前十年、用第一步排盘完之后五的位置向山或者座山位阴阳、后十年用向座山位看阴阳。</p>
+<hr>
+<h1 id="二、罗盘"><a href="#二、罗盘" class="headerlink" title="二、罗盘"></a>二、罗盘</h1><p>三元盘和三合盘的区别在于 <code>有无二十四节气</code><br>玄空盘和三元盘的区别在于 <code>没有中针和缝针</code></p>
+<h2 id="1-定向原则"><a href="#1-定向原则" class="headerlink" title="1.定向原则"></a>1.定向原则</h2><p>1.以大门座位房屋朝向、<code>门向</code>即是房屋朝向。<br>2.四合院和平房以<code>总门</code>来定向。<br>3.农村几层楼以<code>总门楼</code>定向<br>4.大面积办公楼或工厂以<code>首脑机关所在楼层立向</code><br>5.大厦以<code>总入口定向</code>、大厦以内所有单元楼都是一向<br>6.有前后二门或者偏门的以<code>门牌</code>定向<br>7.后高前低的住宅，以高出为坐，低处为向<br>8.贴近街道为向，大厦贴近那一条道路，就以拿一条道路为定向<br>9.有多个不同方向多有门的地方，以进出人数最多最频繁的门定向，或者最大主门来定向<br>10.多层不规则楼房，L、U型，以正门定向<br>11.以阳定向，取住宅受阳光最多的窗定向</p>
+<p>人站在屋外、面对总楼门。罗盘对准大门，转动罗盘使磁针与天池红底线重叠。此时罗盘中垂直于大门的经线两端就是坐向。门的那一头是坐，人的这一头是向。</p>
+<h2 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="2.注意事项"></a>2.注意事项</h2><p>1.不要理房屋太近<br>2.尽量选择室外定向测量<br>3.身体放松、罗盘放在胸到腰间，用眼睛目测罗盘是否与房屋一面平行，水平仪是否倾斜。<br>4.定向要数次来完成，根据不同距离反复测量<br>5.注意周围磁场对罗盘的影响</p>
+<h2 id="3-太极点"><a href="#3-太极点" class="headerlink" title="3.太极点"></a>3.太极点</h2><p>1.房屋是简单的几何图形、可以采用几何对角线的方法求出中性点。小面积缺觉可以补齐。小面积多角可以去除<br>2.如果是一个大一个小的话、要分别求出两个房屋的对角线交点。<br>然后计算出<code>两个对角线交点的距离</code><br>再用<code>小面积 / (小面积+大面积) + 中心点连线距离 = 一个数值 </code><br>再从 <strong>大面积房屋中心点</strong> 向 <strong>小面积房屋中心点</strong> 加上这个数值。则为该房屋的太极点</p>
+<h2 id="4-立极规划分八宫"><a href="#4-立极规划分八宫" class="headerlink" title="4.立极规划分八宫"></a>4.立极规划分八宫</h2><p>再建筑中心线上按定向时罗盘所测向首度数对准立极规度数。然后划分八宫、并注明宫位 </p>
+<h2 id="5-替卦（兼向）"><a href="#5-替卦（兼向）" class="headerlink" title="5.替卦（兼向）"></a>5.替卦（兼向）</h2><p>24山每山 15度 9度以内为正线，起下卦。左右两边各三度都当作替卦（兼向）。</p>
+<ol>
+<li>同性兼向 - 天元与人元  (从元的正中到两边阴6度阳7度) 超出范围  -  空向</li>
+<li>阴阳兼互 - 地元与天元  (5度) 超出范围  -  小空亡</li>
+<li>出卦兼互 - 地元与天元  (5度) 超出范围  -  小空亡</li>
+</ol>
+<p><strong><code>骑线空缝</code></strong></p>
+<ol>
+<li>空向：  若兼向出现以上范围主**<code>凶事。空缝</code>**  <code>小凶</code></li>
+<li>小空亡：夫妻亲戚不和、领导不和、毫无寸功之败局  <code>凶事空缝``中凶</code></li>
+<li>小空亡：兄弟不和、神经错乱、官非冲突、恶疾 <code>骑线、大凶</code></li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">淦淦</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2023/03/02/%E7%8E%84%E7%A9%BA%E9%A3%8E%E6%B0%B4/">http://example.com/2023/03/02/%E7%8E%84%E7%A9%BA%E9%A3%8E%E6%B0%B4/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">淦淦</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/fengS/">
+                                    <span class="chip bg-color">fengS</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">V我50吃疯狂星期四</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/03/02/%E9%A3%8E%E6%B0%B4%E6%9D%82%E8%AE%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="风水杂记">
+                        
+                        <span class="card-title">风水杂记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            淦淦
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/fengS/">
+                        <span class="chip bg-color">fengS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/03/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="软考中级">
+                        
+                        <span class="card-title">软考中级</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            淦淦
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/it/">
+                        <span class="chip bg-color">it</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">淦淦</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Y1Ganz/Y1Ganz.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1564942304@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1564942304" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1564942304" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,1125 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="&lt;软件设计师&gt;备考, Java">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>&lt;软件设计师&gt;备考 | 🕊我知道你很急但你先别急</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">🕊我知道你很急但你先别急</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-institution" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-wifi" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-battery" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">🕊我知道你很急但你先别急</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-institution"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-wifi"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-battery"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">&lt;软件设计师&gt;备考</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Computer/">
+                                <span class="chip bg-color">Computer</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-03-02
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.9k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="lt-软件设计师-gt-备考"><a href="#lt-软件设计师-gt-备考" class="headerlink" title="<软件设计师>备考"></a>&lt;软件设计师&gt;备考</h1><hr>
+<p>@<a href="%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88">TOC</a></p>
+<hr>
+<h1 id="💢第一章-计算机组成与体系结构"><a href="#💢第一章-计算机组成与体系结构" class="headerlink" title="💢第一章 计算机组成与体系结构"></a>💢第一章 计算机组成与体系结构</h1><h2 id="🐱‍👤数据表示"><a href="#🐱‍👤数据表示" class="headerlink" title="🐱‍👤数据表示"></a>🐱‍👤数据表示</h2><h3 id="1-进制转换"><a href="#1-进制转换" class="headerlink" title="1.进制转换"></a>1.进制转换</h3><p><strong>按权展开法(<code>R进制</code>转<code>10进制</code>)：</strong><br><img src="https://img-blog.csdnimg.cn/b2e809b48a9140a7a29c51ccf5ba5c22.png#pic_center" alt="在这里插入图片描述"><br><strong>短除法(<code>10进制</code>转<code>R进制</code>)：</strong> 将余数倒过来输出得到二进制<br><img src="https://img-blog.csdnimg.cn/5a9448eb78fd45ff82f9b3adb4f25b12.png#pic_center" alt="在这里插入图片描述"><br><strong><code>2进制</code>转<code>8、16进制</code>：</strong><br><img src="https://img-blog.csdnimg.cn/5122094f34b94b33b60e36c9f9aeb7ff.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="2-原码、反码、补码、移码"><a href="#2-原码、反码、补码、移码" class="headerlink" title="2.原码、反码、补码、移码"></a>2.原码、反码、补码、移码</h3><p><img src="https://img-blog.csdnimg.cn/924ce375a57b43a3a31c40ae0bdea202.png#pic_center" alt="在这里插入图片描述"><br>原码：第一位<code>符号位</code>、其他位置普通二进制<br>反码：正数不变，第一位<code>符号位</code>、其他位置在原码基础上 <code>1变0、0变1</code><br>移码：用来做<code>浮点运算当中的接码</code>、在补码基础上 <code>首位1变0、0变1</code></p>
+<h3 id="3-浮点数运算"><a href="#3-浮点数运算" class="headerlink" title="3.浮点数运算"></a>3.浮点数运算</h3><p>科学计数法的两位数计算：对阶 → 尾数计算 → 结果格式化<br>N = 尾数 * 基数^指数</p>
+<hr>
+<h2 id="☕计算机结构"><a href="#☕计算机结构" class="headerlink" title="☕计算机结构"></a>☕计算机结构</h2><p>主机包括：CPU 和 内存</p>
+<h3 id="1-CPU"><a href="#1-CPU" class="headerlink" title="1.CPU"></a>1.CPU</h3><p><strong>(1).运算器</strong><br>① 算术逻辑单元ALU <code>数据的算术运算和逻辑运算</code><br>② 累加寄存器AC  <code>给ALU一个工作区域 把算术结果临时存储起来</code><br>③ 数据缓冲寄存器DR <code>类存储器读写操作时暂存数据</code><br>④ 状态条件寄存器PSW <code>存储运算过程中的标志位（溢出、进位、中断、清零）</code><br><strong><code>（争议：也有将其归为控制器的）</code></strong></p>
+<h3 id="2-控制器"><a href="#2-控制器" class="headerlink" title="2.控制器"></a>2.控制器</h3><p>① 程序计数器PC <code>程序运行下一条指令需要了解位置，由此完成</code><br>② 指令寄存器IR  <code>储存即将执行的指令</code><br>③ 指令译码器  <code>对指令中的操作码字段进行解释</code><br>④ 时序部件 <code>提供时序控制信号</code><br>⑤地址寄存器</p>
+<h3 id="3-Flynn-要掌握特性"><a href="#3-Flynn-要掌握特性" class="headerlink" title="3.Flynn(要掌握特性)"></a>3.Flynn<code>(要掌握特性)</code></h3><p><img src="https://img-blog.csdnimg.cn/eb84959f7ee9498f9e35cbd934f99ad8.png#pic_center" alt="在这里插入图片描述"><br>①单指令单数据流在PC已经不常见，多见于单片机领域<br>②单指令多数据流在<code>阵列处理机(适用于处理数组)</code>中常见<br>③多指令单数据流是一种<code>理论层次</code>的模型<br>④多指令多数据流典型为多处理机系统</p>
+<p><strong>指令的基本概念：</strong><br>一条指令就是机器语言的一个语句，它是一组有意义的二进制代码：<br><strong><code>|  操作码字段  |  地址码字段 |</code></strong><br>操作码指出计算机要执行什么性质的操作如：加法、减法、取数、存数等等<br>地址码字段需要包含操作数的地址及操作结果的存放地址</p>
+<p><strong>寻址方式</strong><br>(1)立即寻址方式<br>特点：操作数直接在指令中、<code>速度快</code>、灵活性差<br>(2)直接寻址方式<br>特点：指令中存放的是操作数的地址<br>(3)间接寻址方式<br>特点：指令中存放了一个地址、这个地址的内容是操作数的地址<br>(4)寄存器寻址方式<br>特点：寄存器存放操作数<br>(5)寄存器间接寻址方式<br>特点：寄存器内存放的是操作数的地址</p>
+<h3 id="4-CISC与RISC-掌握区别"><a href="#4-CISC与RISC-掌握区别" class="headerlink" title="4.CISC与RISC(掌握区别 )"></a>4.CISC与RISC<code>(掌握区别 )</code></h3><p><img src="https://img-blog.csdnimg.cn/68ebce8a84b84cb8989fec3c46783e12.png#pic_center" alt="在这里插入图片描述"><br>CISC：复杂，指令数量多，频率差别大，多寻址。<br>RISC：精简，指令数量少，操作寄存器，单周期，少寻址，多通用寄存器，流水线。 </p>
+<h3 id="5-流水线"><a href="#5-流水线" class="headerlink" title="5.流水线"></a>5.流水线</h3><p>执行一条指令步骤： <code>取指 → 分析 → 执行</code> 节约时间<br><img src="https://img-blog.csdnimg.cn/fddcf4cf420e4c9d93cb82ee826ee448.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="6-流水线计算"><a href="#6-流水线计算" class="headerlink" title="6.流水线计算"></a>6.流水线计算</h3><p>①流水线周期指 <code>执行时间最长的一段(指最耗时的那一个步骤)</code><br>例如： 取值、分析、执行时间分别为 2ns、2ns、1ns 则 2ns 为最长的一段<br>若执行100条指令则时间为：5 + 99 * 2 = 203ns<br>②<code>计算公式：</code><br><code>1条指令执行时间 + (指令条数 - 1)*流水线周期</code><br>理论公式：<code>(t1 + t2 + .. + tk) + (n - 1)*▲t</code><br>实践公式：<code>( k + n - 1) *▲t</code>  <strong>k表示一条指令有k个步骤</strong></p>
+<p>超标量流水线：</p>
+<h3 id="7-流水线吞吐率"><a href="#7-流水线吞吐率" class="headerlink" title="7.流水线吞吐率"></a>7.流水线吞吐率</h3><p>指在单位时间内流水线所完成的任务数量或输出的结果数量。<br>吞吐率公式：<code>TP = 指令条数 / 流水线执行时间</code><br>例： 100 / 203ns<br>最大吞吐率：<img src="https://img-blog.csdnimg.cn/f3486d42e8b346e487485a639c273910.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="8-流水线的加速比"><a href="#8-流水线的加速比" class="headerlink" title="8.流水线的加速比"></a>8.流水线的加速比</h3><p>含义：完成同一批任务，不使用流水线所用的时间与使用流水线所使用的时间之间的比成为流水线加速比。<br>公式：<code>S = 不使用流水线执行时间 / 使用流水线执行时间</code><br>加速比可以展示流水线的优势，越高越好</p>
+<h3 id="9-流水线的效率"><a href="#9-流水线的效率" class="headerlink" title="9.流水线的效率"></a>9.流水线的效率</h3><p>含义：指流水线的设备利用率<br>公式：E = n个任务占用的时空区 / k个流水段的总的时空区 = T0 / KTk<br>其实就是将整个任务占用时空区的阴影面积大小 / 整个时空区的大小</p>
+<h3 id="10-层次化存储结构"><a href="#10-层次化存储结构" class="headerlink" title="10.层次化存储结构"></a>10.层次化存储结构</h3><p><strong><strong><code>内存就是主存！</code></strong></strong></p>
+<p>快   CPU        →   寄存器<br>↑<br>速   Cache(高速缓存)     →   按内存存取（通过关键词检索对应的内容）</p>
+<p>度   内存(主存)<br>↑<br>慢   外存(辅存) → 硬盘、光盘、U盘等</p>
+<p>往往速度快的容量小、速度慢的容量大。<br>若将所有的存储器都做成Cache或者寄存器，成本将难以接受、<br>若都用外存级别的存储器，速度又跟不上，CPU极快、但外存相对CPU慢了很多倍、<br>Cache对于CPU并不是必须的，CPU可以直接和内存进行数据交换、但是速度会慢上百倍。<br>Cache一般是以k、M兆为单位、但是内存都是以G为单位<br><code>局部性原理：执行程序过程中会频繁使用刚刚用过的结构</code></p>
+<h3 id="11-Cache概念"><a href="#11-Cache概念" class="headerlink" title="11.Cache概念"></a>11.Cache概念</h3><p>在整个结构当中、除了寄存器，Cache的速度是最快的<br><img src="https://img-blog.csdnimg.cn/fde484a716b64cca81db821dd651e575.png#pic_center" alt="在这里插入图片描述"><br>当CPU要数据的时候，Cache里面有，就说明命中了。如果Cache没有，CPU就要到主存中去读取数据。<br><code>命中率就意味着：CPU在Cache中读取到所需要的数据的概率</code><br><strong><code>公式： Cache+主存储器的系统平均周期 = 命中率 X Cache周期时间 + 未命中率 X 主存储器周期时间</code></strong></p>
+<h3 id="12-局部性原理"><a href="#12-局部性原理" class="headerlink" title="12.局部性原理"></a>12.局部性原理</h3><p>时间局部性：假设双重循环执行100万次、如果放进Cache就很快很方便<br>空间局部性：连续调用数组<br>工作集理论：工作集是进程运行时被频繁访问的也难免</p>
+<h3 id="13-Cache映像"><a href="#13-Cache映像" class="headerlink" title="13.Cache映像"></a>13.Cache映像</h3><p><strong>（1）直接相联映像</strong>：硬件电路较为简单，但<code>冲突率很高</code><br><img src="https://img-blog.csdnimg.cn/e571792d29844cc39c1eb86d251f78bb.png#pic_center" alt="在这里插入图片描述"><br>每一个<code>主存区内的0页</code>都能够放进<code>Cache中的0页</code>（但不是同时）。假如<code>0区的0页放</code>置在<code>Cache0页</code>，当<code>1区0页（也就是1区16页）</code>也要放入<code>Cache0页</code>时，原先<code>0区0页</code>将被挤出。所以<code>冲突率高</code>。</p>
+<p><strong>（2）全相联映像</strong>：电路难于设计和实现，只适用于小容量的Cache，<code>冲突率较低</code><br><img src="https://img-blog.csdnimg.cn/db214c65bd2043e3be7ba6742c60ddd7.png#pic_center" alt="在这里插入图片描述"><br>主存内地址<code>无规则随意放置</code>在Cache当中，问题在于<code>查找地址麻烦</code>，但<code>冲突率小</code>。</p>
+<p><strong>（3）组相联映像</strong>：直接相连与全相联的<code>折中</code><br>地址映像是将主存与Cache的储存空间划分为若干大小相同的页（或成为块）<br><img src="https://img-blog.csdnimg.cn/ba134a0bfe104479aebad22800cee6c9.png#pic_center" alt="在这里插入图片描述"><br>将主存划分<code>区和组</code>在区之间使用直接相联映像，在组之间使用全相联映像。</p>
+<h3 id="14-主存-分类"><a href="#14-主存-分类" class="headerlink" title="14.主存-分类"></a>14.主存-分类</h3><p>分为两类：<code>随机存取存储器</code>、<code>只读存储器。</code><br>随机存取存储器又分为： <strong><code>断电之后所存储的信息消失</code></strong><br>1.<code>DRAM (Dynamic RAM，动态RAM)-SDRAM</code><br>2.<code>SRAM (Static RAM，静态)</code><br>只读存储器又分为：**<code>断电之后所存储的信息还在</code>** BIOS<br>1.<code>MROM(Mask ROM，掩模式ROM)</code><br>2.<code>PROM(Programmable ROM，一次可编程 ROM)</code><br>3.<code>EPROM(Erasable PROM，可擦除的 PROM)</code><br>4.<code>闪速存储器(flash memory，闪存)</code></p>
+<h3 id="15-主存的编址与计算"><a href="#15-主存的编址与计算" class="headerlink" title="15.主存的编址与计算"></a>15.主存的编址与计算</h3><p>存储单元有很多编址方式：<br><strong>(1).按字编址</strong>：存储体的存储单元是字存储单元，即最小寻址单位是一个字<br><strong>(2).按字节编址</strong>： <code>1 byte = 8 bit</code>  存储体的存储单元是字节存储单元，即最小寻址单位是一个字节</p>
+<p>根据存储器所要求的容量和选定的存储芯片容量计算出所需芯片的总数：<br>    <strong><code>总数 = 总容量 / 每片的容量</code></strong><br> 使用地址区间后一位减去前一位 <code>H</code> 表示16进制 不参与运算。</p>
+<h3 id="17-总线"><a href="#17-总线" class="headerlink" title="17.总线"></a>17.总线</h3><p>一条总线<code>同一时刻仅允许一个设备发送，但允许多个设备接收</code>。<br><strong>总线分类:</strong><br>**数据总线( Data Bus )**：在CPU和RAM之间来回传送需要处理或是需要存储的数据<br>**地址总线( Address Bus )**：用来指定在RAM之中存储的数据的地址<br>**控制总线( Control Bus )**：将微处理器控制单元的信号传送到周边设备，常见的为USB Bus和1394 Bus</p>
+<h3 id="18-串联系统与并联系统"><a href="#18-串联系统与并联系统" class="headerlink" title="18.串联系统与并联系统"></a>18.串联系统与并联系统</h3><p><strong>串联系统：</strong><br><img src="https://img-blog.csdnimg.cn/32031a19223f42e7833c6ee6a56080e1.png#pic_center" alt="在这里插入图片描述"><br>R1.R2…Rn都表示<code>可靠性</code> 求串联系统的可靠性即为： <code>R = R1 X R2 X .... X Rn</code>  <strong>每一个可靠性的乘积</strong></p>
+<p><strong>并联系统</strong><br><img src="https://img-blog.csdnimg.cn/aff7ec44b49c481390769252b0c9e12a.png#pic_center" alt="在这里插入图片描述"><br>R = 1 - ( 1 - R1 ) X ( 1 - R2 ) X … X ( 1 - Rn )</p>
+<p><strong>混合型（有并联也有串联）</strong><br><img src="https://img-blog.csdnimg.cn/584d1b8924ab435c9f51803291f11935.png#pic_center" alt="在这里插入图片描述"><br>公式如图~  <strong>立方中的R为并联部分、平方中的R为串联部分</strong></p>
+<h3 id="19-检验码-校验码基础知识"><a href="#19-检验码-校验码基础知识" class="headerlink" title="19.检验码-校验码基础知识"></a>19.检验码-校验码基础知识</h3><p><strong>码距：</strong>任何一种编码都有许多码字构成，任意两个码字之间最少变化的二进制位数就成为效验码的码距<br><strong>例如：</strong>用4位二进制表示16种状态，则有16个不同的码字，此时码距为1。如0000与0001。 只有一位数不同码距为1。 如 01 、 10 则有两位数不同 码距为2。</p>
+<p><strong>校验码-奇偶校验</strong><br>奇偶校验码的编码方法是：由若干位有效信息(如一个字节)，再加上一个二进制位(校验位)组成校验码<br><strong>奇校验：</strong>整个校验码(有效信息位和校验位)中“1”的个数为<code>奇数</code><br><strong>偶校验：</strong>整个校验码(有效信息位和校验位)中“1”的个数为<code>偶数</code><br><strong><code>奇偶校验，可检查1位的错误，不可纠错</code></strong> <strong>意为：你知道发生了错误，但是你并不知道如何改正</strong></p>
+<p>  <strong>比如：</strong><code>1010⬜</code>需要在后方的方框中<code>填入一个校验位</code>来组成校验码。 若加上一个<code>“1”</code>则为<code>奇校验</code><br>  但是在传输的过程中 <code>10101</code> 变为 <code>10111</code> 此时<code>“1”</code>的个数变为偶数，则为<code>偶校验</code> 说明<code>发生错误</code><br>  若传输的过程中变为 <code>11111</code> 此时变为 <code>奇校验</code> 是无法判断是否发生错误的。</p>
+<p><strong>校验码-循环校验码CRC</strong><br><strong><code>CRC校验，可检错，不可纠错</code></strong><br><img src="https://img-blog.csdnimg.cn/5dd0f35627f6403e8f3d793fc9134ac4.png#pic_center" alt="在这里插入图片描述"><br><strong>模2除法</strong><br>模2除法指的是在做除法运算的过程中不计进位的除法。<br><img src="https://img-blog.csdnimg.cn/6872ba62e1e74d75b55b107c5a6c8904.png#pic_center" alt="在这里插入图片描述"><br>从X的四次方往1摊开 有则为1 无则为0。 当作除数使用模2除法来除。除尽之后将剩下的数字补到被除数后方。将补完之后的数字传过去，对方接受验算之后若能整除则为对。若不能则为错。**<code>同样只能验错不能修正</code>**</p>
+<hr>
+<h1 id="🔧第二章-操作系统"><a href="#🔧第二章-操作系统" class="headerlink" title="🔧第二章 操作系统"></a>🔧第二章 操作系统</h1><h3 id="1-进程管理-进程的概念"><a href="#1-进程管理-进程的概念" class="headerlink" title="1.进程管理 - 进程的概念"></a>1.进程管理 - 进程的概念</h3><p><strong>含义：</strong>进程是程序在一个数据集合上运行的过程，它是系统进行资源分配和调度的一个独立单位。它由<code>程序块、进程控制块( PCB)和数据块</code>三部分组成<br><strong>进程与程序的区别：</strong>进程是程序的一次执行过程，没有程序就没有进程，程序是完成某个特定功能的一系列程序语句的集合，只要不被破坏，它就永远存在。程序是一个静态的概念，而进程是一个动态的概念，它由创建而产生，完成任务后因撤销而消亡;进程是系统进行资源分配和调度的独立单位，而程序不是。<br><img src="https://img-blog.csdnimg.cn/4327bc6dc395464781e1564d80b5c24c.png#pic_center" alt="在这里插入图片描述"><br>进程一开始处于就绪状态，一旦CPU发生调用，则变为运行状态。之后会发生三种情况：<br>① CPU时间片用完，进程重新回到就绪状态<br>② 进来的一个进程比当前进程优先级要高，所以低优先级的要先回到就绪状态。<br>③ 进入运行状态等待某个事件（如等待用户输入等），进入等待状态之后等待事件发生，再重回就绪状态。</p>
+<p><strong>进程的同步与互斥：</strong><br>①直接制约关系： 同步：速度有差异，在一定情况下等待另一方。<br>②间接制约关系： 互斥：千军万马过独木桥但资源有限。<br>③临界资源：一次仅允许一个进程使用的资源称为临界资源</p>
+<p><strong>PV操作</strong><br><strong>临界区</strong>：每个进程中访问临界资源的<code>那段代码成为临界区</code><br><strong>信号量</strong>：是一种特殊的变量<br><img src="https://img-blog.csdnimg.cn/460993bf77c44cfd8b3445e5823f3b4a.png#pic_center" alt="在这里插入图片描述"><br><strong>P操作</strong>：是一个申请资源的操作，S表示临界资源的<code>资源总数</code>，每当进行p操作就会申请一个临界资源，资源数S就会 -1，此时判断S资源如果小于0，如果为真就挂起，进入阻塞队列。如果为假，就继续下面的执行。<br><strong>V操作</strong>：是一个释放资源的操作，<code>释放等于用完了之后将临界资源返还</code>。若资源数&lt;=0，说明阻塞队列里面还在等待，可以唤醒还在等待使用的程序来使用。</p>
+<p><strong>多个进程共享一台打印机问题（互斥模型）：</strong><br>例如：理发店只有一个老板在，来了一名客人之后，老板就得为一个客人剪头发，此时再来客人就要等待。老板就等于是临时资源。<br><strong><code>单缓冲区</code>生产者、消费者问题（同步模型）：</strong><br><img src="https://img-blog.csdnimg.cn/e11a8fe658704cdebfc38cc40b5a0dcd.png#pic_center" alt="在这里插入图片描述"><br><strong>市场的个数只有 1 、 S1初值为 1、 S2初值为 0 。</strong><br>生产者生产产品、消费者消费产品、市场用来存放产品。<br><code>生产者 → 生产好一个产品p1 → (挂起) → 送到缓冲区 → (唤醒)</code><br><code>消费者 → 从缓冲区拿出产品 → (挂起) → 消费掉产品 → (唤醒)</code><br><strong><code>P可以理解为 等待 、 V可以理解为 下一步</code></strong><br><img src="https://img-blog.csdnimg.cn/542d4e53e16f48cc9f93d89b9d18d844.png#pic_center" alt="在这里插入图片描述"><br>上图称为 <strong><code>前驱图</code></strong><br>A、B、C指向D称之为<code>入度</code>。 A,B,C三个进程都影响着D。必须要ABC先做完才能到D最后到E。</p>
+<h3 id="2-进程管理-死锁问题"><a href="#2-进程管理-死锁问题" class="headerlink" title="2.进程管理 - 死锁问题"></a>2.进程管理 - 死锁问题</h3><p><strong>含义：</strong>进程管理是操作系统的核心，如果<code>设计不当</code>，当一个进程在等待一件<code>不可能发生的事情</code>，则进程就死锁了。而一个或多个进程产生死锁，就会导致<code>系统死锁</code>。<br><strong>例如：</strong>系统有A\B\C\D\E五个进程都需要4个系统资源，系统至少有几个资源才不会发生死锁？<br><strong><code>答案 = ( (单个进程所需系统资源 - 1) * 进程个数 ) + 1</code></strong><br><img src="https://img-blog.csdnimg.cn/29ac6b299843480aa76215b45cabd745.png#pic_center" alt="在这里插入图片描述"><br> <strong><code>形成死锁的四个必要条件：</code></strong> 即上图左边： <code>互斥(争夺资源) → 保持和等待(挂起) → 不剥夺(有限资源不会释放) → 环路等待(形成一条回路)</code><br> <strong>预防死锁就必须打破四大条件！</strong><br> <strong>死锁的避免</strong>：<br> ①有序资源分配法 ：如第一点当中ABCDE有序的分配进程<br> ②银行家算法：<br> <img src="https://img-blog.csdnimg.cn/ebaa3e03f614451a99b79da158653f3e.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/b31020f3a7cb44fb99895c6bfd9b1973.png#pic_center" alt="在这里插入图片描述"><br>详解：百度云盘 第二章第1集 50：00<br><strong>解答过程：</strong><br>①计算一下五个进程的已分配资源数 ： 7 7 5<br>②用可用资源减去已分配资源：2 1 0  这些事可以自由分配的资源<br>③看看五个进程中谁可以先满足，满足之后可以把已分配的资源一起拿回来：比如P2 拿回来为：4.2.1<br>之后再去满足 P4 之后便为： 5 4 1 如此排序<br>最终答案为 B</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">淦淦</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2023/03/02/%E3%80%8A%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E3%80%8B%E5%A4%87%E8%80%83/">http://example.com/2023/03/02/%E3%80%8A%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E3%80%8B%E5%A4%87%E8%80%83/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">淦淦</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Computer/">
+                                    <span class="chip bg-color">Computer</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">V我50吃疯狂星期四</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/03/02/Java/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA基础">
+                        
+                        <span class="card-title">JAVA基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            淦淦
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Computer/">
+                        <span class="chip bg-color">Computer</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/11/05/EasyX%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="EasyX隔离人员信息管理系统">
+                        
+                        <span class="card-title">EasyX隔离人员信息管理系统</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            淦淦
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/EasyX-C-C/">
+                        <span class="chip bg-color">EasyX C/C++</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">淦淦</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Y1Ganz/Y1Ganz.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1564942304@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1564942304" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1564942304" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
